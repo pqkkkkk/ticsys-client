@@ -1,0 +1,283 @@
+.container {
+    width: auto;
+    margin: 0 auto;
+    padding: 20px;
+}
+.step-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+.step .circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.step .circle.completed {
+    background-color: #fff;
+}
+.step .circle.completed i {
+    color: #000;
+}
+.step .circle.active {
+    border: 2px solid #ffcc00;
+}
+.step .circle.active .inner-circle {
+    width: 8px;
+    height: 8px;
+    background-color: #ffcc00;
+    border-radius: 50%;
+}
+.step .circle.inactive {
+    border: 2px solid #666;
+}
+.step .text {
+    margin-top: 8px;
+}
+.step .text.completed {
+    color: #fff;
+}
+.step .text.active {
+    color: #ffcc00;
+}
+.step .text.inactive {
+    color: #666;
+}
+.divider {
+    width: 32px;
+    height: 1px;
+    background-color: #666;
+    margin: 0 16px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #444;
+}
+.header div {
+    font-size: 18px;
+    font-weight: bold;
+}
+.header .active {
+    color: #FFD700;
+}
+.event-info-and-timer {
+    background-color: #38383d;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.event-info {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.event-info .event-name {
+    color: #2dc275;
+    font-size: 24px;
+    font-weight: bold;
+}
+.event-info .details {
+    margin-top: 10px;
+}
+.event-info .details div {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+.event-info .details i {
+    margin-right: 10px;
+}
+.timer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.timer .box {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.timer .box .text {
+    font-size: 14px;
+}
+.timer .box .time {
+    font-size: 24px;
+    font-weight: bold;
+}
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.payment-info {
+    margin-right: 20px;
+}
+.payment-info h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2dc275;
+}
+.alert {
+    background-color: #fffced;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.alert i {
+    margin-right: 10px;
+}
+.alert a {
+    color: #1E90FF;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+.info-box {
+    background-color: #38383d;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-box .info-box-title {
+    color: #2dc275;
+    font-weight: bold;
+}
+.info-box a {
+    color: #1E90FF;
+    text-decoration: underline;
+}
+.payment-method {
+    background-color: #38383d;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.payment-method .method {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.payment-method .method img {
+    margin-right: 10px;
+}
+.payment-method .method span {
+    margin-left: 10px;
+    background-color: #FF0000;
+    color: white;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+.payment-method .method a {
+    color: #1E90FF;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+.ticket-infos, .order-info {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: black;
+}
+.ticket-info-divider{
+    display: flex;
+    width: 100%;
+    height: 1px;
+    background-color: #666;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2px;
+}
+.ticket-infos .header, .order-info .header {
+    display: flex;
+    justify-content: space-between;
+}
+.ticket-infos .header a, .order-info .header a {
+    color: #1E90FF;
+    text-decoration: underline;
+}
+.ticket-infos .details, .order-info .details {
+    margin-top: 20px;
+}
+.ticket-infos .details .title, .order-info .details div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.ticket-infos .details .ticket-info-container div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.order-info .total {
+    color: #2dc275;
+    font-weight: bold;
+}
+.order-info .terms {
+    margin-top: 20px;
+    font-size: 12px;
+}
+.order-info .terms a {
+    color: #1E90FF;
+    text-decoration: underline;
+}
+.order-info .payment-btn {
+    background-color: #2dc275;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.discount, .vouchers {
+    display: flex;
+    margin-top: 20px;
+}
+.discount input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    background-color: #444;
+    color: white;
+}
+.discount button, .vouchers button {
+    background-color: #555;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+.vouchers select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    background-color: #444;
+    color: white;
+}

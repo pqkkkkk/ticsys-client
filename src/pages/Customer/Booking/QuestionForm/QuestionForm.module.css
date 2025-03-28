@@ -1,0 +1,197 @@
+.main{
+    align-items: center;
+    justify-content: center;
+
+}
+.step-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+.step .circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.step .circle.completed {
+    background-color: #fff;
+}
+.step .circle.completed i {
+    color: #000;
+}
+.step .circle.active {
+    border: 2px solid #ffcc00;
+}
+.step .circle.active .inner-circle {
+    width: 8px;
+    height: 8px;
+    background-color: #ffcc00;
+    border-radius: 50%;
+}
+.step .circle.inactive {
+    border: 2px solid #666;
+}
+.step .text {
+    margin-top: 8px;
+}
+.step .text.completed {
+    color: #fff;
+}
+.step .text.active {
+    color: #ffcc00;
+}
+.step .text.inactive {
+    color: #666;
+}
+.divider {
+    width: 32px;
+    height: 1px;
+    background-color: #666;
+    margin: 0 16px;
+}
+.header {
+    background-color: #2d3748;
+    padding: 16px;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.header .info {
+    margin-top: 8px;
+}
+.header .info i {
+    margin-right: 8px;
+}
+.header .timer {
+    background-color: #4a5568;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+}
+.header .timer .time {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+.container {
+    max-width: 1200px;
+    margin: 32px auto;
+    padding: 0 16px;
+}
+.form-section, .ticket-section {
+    background-color: #2d3748;
+    padding: 24px;
+    border-radius: 8px;
+}
+.form-section {
+    flex: 2;
+}
+.ticket-section {
+    flex: 1;
+    background-color: white;
+    color: black;
+}
+.form-section h2 {
+    color: #48bb78;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.form-section h3 {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.form-section form {
+    background-color: #4a5568;
+    padding: 16px;
+    border-radius: 8px;
+}
+.form-section form .form-group {
+    margin-bottom: 16px;
+}
+.form-section form label {
+    display: block;
+    margin-bottom: 8px;
+}
+.form-section form input {
+    width: 100%;
+    padding: 8px;
+    background-color: #2d3748;
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+.ticket-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: black;
+}
+.ticket-section .ticket-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.ticket-info-divider{
+    display: flex;
+    width: 100%;
+    height: 1px;
+    background-color: #666;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2px;
+}
+.ticket-section .subtotal, .ticket-section .actual-price, .ticket-section .promotion-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+    font-weight: bold;
+}
+.ticket-section .required-message {
+    color: rgba(128, 128, 137, 0.565);
+    margin-bottom: 16px;
+}
+.ticket-section .subtotal .amount {
+    color: #48bb78;
+}
+.ticket-section .continue-btn {
+    width: 100%;
+    background-color: #48bb78;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.ticket-section .reselect {
+    text-align: right;
+    margin-top: 16px;
+}
+.ticket-section .reselect a {
+    color: #4299e1;
+    text-decoration: none;
+}
+@media (min-width: 1024px) {
+    .main-content {
+        display: flex;
+        gap: 32px;
+    }
+}

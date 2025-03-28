@@ -1,0 +1,105 @@
+.main-content .title{
+    margin-bottom: 20px;
+}
+.main-content .title h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.main-content .title .divider {
+    height: 1px;
+    background-color: #ccc; 
+}
+.main-content .search-bar-and-filter {
+    display: flex;
+    flex-direction: column; /* Thay đổi từ row thành column */
+    align-items: center; /* Căn giữa các phần tử */
+    margin: 25px;
+    gap: 20px;
+}
+.main-content .search-bar-and-filter .search-bar {
+    display: flex;
+    width: 100%; /* Đảm bảo thanh tìm kiếm chiếm toàn bộ chiều rộng */
+    justify-content: center; /* Căn giữa thanh tìm kiếm */
+    gap: 10px; /* Khoảng cách giữa input và button */
+}
+.main-content .search-bar-and-filter .filter {
+    display: flex;
+    justify-content: center; /* Căn giữa các nút lọc */
+    gap: 10px; /* Khoảng cách giữa các nút lọc */
+}
+.main-content .search-bar-and-filter input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4a5568;
+    color: white;
+    width: 300px; /* Tăng chiều rộng của input */
+}
+.main-content .search-bar-and-filter button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.main-content .search-bar-and-filter button.green {
+    background-color: #48bb78;
+    color: white;
+}
+.main-content .event-list{
+    margin: 25px;
+}
+.event-list .event-item {
+    background-color: #31353e !important;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+.event-list .event-item .event-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+.event-list .event-item .event-header img {
+    margin-right: 20px;
+}
+.event-list .event-item .event-header h2 {
+    color: #48bb78;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.event-list .event-item .event-header p {
+    margin: 5px 0;
+}
+.event-list .event-item .event-header p.green {
+    color: #48bb78;
+}
+.event-list .event-item .event-footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    gap: 20px;
+    background-color: #414652 !important;
+}
+.event-list .event-item .divider {
+    height: 1px;
+    background-color: #ccc; 
+}
+.event-list .event-item .event-footer .event-footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.event-list .event-item .event-footer .event-footer-item p {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.event-list .event-item .event-footer a i {
+    margin-right: 10px;
+}

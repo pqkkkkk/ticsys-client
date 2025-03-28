@@ -1,0 +1,62 @@
+.step-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: #000;
+  margin-bottom: 20px;
+}
+
+.steps {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.circle {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #000;
+}
+
+.circle-active {
+  background-color: #38a169;
+  color: #fff;
+}
+
+.step span {
+  color: #fff;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button.continue {
+  background-color: #38a169;
+  color: #fff;
+}
+.create-event-main-content{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

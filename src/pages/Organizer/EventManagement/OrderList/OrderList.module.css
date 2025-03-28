@@ -1,0 +1,99 @@
+.order-list-container {
+    background-color: white;
+    color: black;
+    margin: 0 auto;
+    padding: 20px;
+}
+.order-list-container .search-input{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.search-input input {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+.search-input button {
+    background-color: #28a745;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.header .order-title, .header .total-title, .header .quantity-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+.header .order-title {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.header input[type="checkbox"] {
+    margin-right: 20px;
+}
+.header .quantity-title{
+    flex-grow: 0.5;
+    text-align: center;
+}
+.header .total-title {
+    text-align: right;
+}
+.order-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.order-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
+}
+.order-item input[type="checkbox"] {
+    margin-right: 20px;
+}
+.order-item .order-info {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.order-item .order-info i {
+    color: #28a745;
+    margin-right: 10px;
+}
+.order-item .order-info .details {
+    display: flex;
+    flex-direction: column;
+}
+.order-item .order-info .details .name {
+    font-weight: bold;
+}
+.order-item .order-info .details .email,
+.order-item .order-info .details .phone,
+.order-item .order-info .details .date {
+    font-size: 14px;
+    color: #7a7a7a;
+}
+.order-item .order-info .details .date span {
+    font-weight: bold;
+}
+.order-item .quantity{
+    flex-grow: 0.5;
+    text-align: center;
+}
+.order-item .price {
+    text-align: right;
+}

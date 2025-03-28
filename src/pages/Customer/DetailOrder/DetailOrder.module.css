@@ -1,0 +1,72 @@
+.container {
+    width: 60%;
+    margin: 20px auto;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.ticket-header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #555;
+}
+
+.banner {
+    width: 100%;
+    border-radius: 5px;
+}
+
+h2, h3 {
+    color: #ffffff;
+}
+
+.order-section, .buyer-info, .order-details {
+    margin-top: 20px;
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: #333;
+    color: #ffffff;
+}
+
+.order-table th, .order-table td {
+    border: 1px solid #555;
+    padding: 10px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.order-table th {
+    background: #444;
+    color: #ffffff;
+}
+.buyer-info .buyer-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: #333;
+    color: #ffffff;
+}
+.buyer-info .buyer-table th, .buyer-info .buyer-table td {
+    border: 1px solid #555;
+    padding: 10px;
+    text-align: left;
+    color: #ffffff;
+
+}
+
+.buyer-info .buyer-table th {
+    background: #444;
+    color: #ffffff;
+}
+.buyer-info .buyer-table td {
+    width: 100%;
+}
+p {
+    margin: 5px 0;
+}

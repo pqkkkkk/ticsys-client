@@ -1,0 +1,122 @@
+.create-voucher-container {
+    max-width: 900px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: black;
+}
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+}
+.header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 16px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+.card {
+    border: 1px solid #e5e7eb;
+    padding: 16px;
+    border-radius: 8px;
+}
+.card h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: black;
+}
+.card p {
+    color: #6b7280;
+    margin-bottom: 16px;
+}
+.card button {
+    background-color: #10b981;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.section {
+    margin-bottom: 24px;
+}
+.section h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: black;
+}
+.section label {
+    display: block;
+    color: #374151;
+    margin-bottom: 4px;
+}
+.section input, .section select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+.section p {
+    color: #6b7280;
+    font-size: 14px;
+}
+.section .flex {
+    display: flex;
+    gap: 16px;
+}
+.section .flex input {
+    flex: 1;
+}
+.section .radio-group {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.section .radio-group label {
+    display: flex;
+    align-items: center;
+}
+.section .radio-group input {
+    margin-right: 8px;
+}
+.promotion-type {
+    display: flex;
+    gap: 16px;
+}
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+.footer button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.footer .cancel {
+    background-color: #d1d5db;
+    color: #374151;
+}
+.footer .create {
+    background-color: #10b981;
+    color: white;
+}

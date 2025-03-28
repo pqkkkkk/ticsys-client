@@ -1,0 +1,98 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+}
+.header {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.tabs {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+.tab {
+    padding: 8px 16px;
+    border-radius: 9999px;
+    cursor: pointer;
+}
+.tab.active {
+    background-color: #22c55e;
+    color: white;
+}
+.tab.inactive {
+    background-color: #3f3f3f;
+    color: #9ca3af;
+}
+.sub-tabs {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+.sub-tab {
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+.sub-tab.active {
+    color: #22c55e;
+    border-color: #22c55e;
+}
+.sub-tab.inactive {
+    color: #9ca3af;
+}
+.ticket {
+    display: flex;
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    padding: 16px;
+    width: 100%;
+}
+.ticket-date {
+    background-color: #3f3f3f;
+    text-align: center;
+    padding: 16px;
+    border-radius: 8px 0 0 8px;
+    flex: 0.5; /* Đảm bảo nó mở rộng đồng đều */
+}
+.ticket-date p {
+    margin: 0;
+}
+.ticket-date .day {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.ticket-date .month,
+.ticket-date .year {
+    font-size: 1.25rem;
+}
+.ticket-details {
+    margin-left: 2px;
+    background-color: #3f3f3f;
+    padding: 10px;
+    flex: 3; /* Điều chỉnh tỷ lệ mở rộng của phần chi tiết */
+}
+.ticket-details h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.ticket-details .status {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+.ticket-details .status span {
+    background-color: #22c55e;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+}
+.ticket-details p {
+    margin: 4px 0;
+}
+.ticket-details i {
+    margin-right: 8px;
+}

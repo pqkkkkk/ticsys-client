@@ -1,0 +1,114 @@
+.container {
+    display: flex;
+    height: 100vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box-shadow */
+    border-radius: 10px; /* Added border-radius */
+    background-color: #ffffff; /* Added background-color */
+    margin: 20px; /* Added margin */
+}
+
+.left-section, .right-section {
+    flex: 1;
+}
+
+.left-section {
+    background-color: #3e3e3e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left-section .app-name h1{
+    text-align: center; /* Changed from left to center */
+}
+.right-section {
+    background-color: #4e4e4e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-name h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+main {
+    text-align: center;
+}
+
+.social-login button {
+    background-color: #ffffff;
+    color: #2e2e2e;
+    border: 1px solid #ddd; /* Added border */
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px; /* Added border-radius */
+    transition: background-color 0.3s ease; /* Added transition */
+}
+
+.social-login button:hover {
+    background-color: #f0f0f0; /* Added hover effect */
+}
+
+.login-form {
+    margin-top: 20px;
+}
+
+.login-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd; /* Changed border */
+    border-radius: 5px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.options .remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.options .forgot-password a {
+    color: #ff5722; /* Changed color */
+    text-decoration: none;
+}
+
+.options .forgot-password a:hover {
+    text-decoration: underline; /* Added hover effect */
+}
+
+button {
+    background-color: #ff5722;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Added transition */
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+.right-section .content {
+    text-align: center;
+}
+
+.right-section .illustration img {
+    max-width: 100%;
+    height: auto;
+}

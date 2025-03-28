@@ -1,0 +1,150 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.left-section, .right-section {
+    padding: 16px;
+}
+.left-section {
+    flex: 1;
+    background-color: black;
+}
+.right-section {
+    background-color: #1f1f1f;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.back-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+.back-button i {
+    color: #2dc275;
+}
+.back-button span {
+    color:  #2dc275;
+    margin-left: 8px;
+}
+.container .left-section h1 {
+    text-align: center;
+    color: #2dc275;
+    margin-bottom: 32px;
+}
+.ticket-type {
+    margin-bottom: 32px;
+}
+.ticket-type .ticket-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.ticket-type h2 {
+    color: #2dc275;
+}
+.ticket-type p {
+    margin: 0;
+}
+.ticket-type .info {
+    background-color: #333;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+.ticket-type .info i {
+    margin-right: 8px;
+}
+.quantity {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+.quantity .select-quantity-button, .quantity span {
+    background-color: #333;
+    color: #2dc275;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    margin: 0 4px;
+}
+.select-quantity-button:disabled, .continue-button:disabled {
+    background-color: #ccc; /* Change background color */
+    color: #666; /* Change text color */
+    cursor: not-allowed; /* Change cursor to indicate it's disabled */
+    opacity: 0.6; /* Reduce opacity */
+}
+.right-section h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.right-section .info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.right-section .info i {
+    margin-right: 8px;
+}
+.right-section .pricing {
+    margin-bottom: 16px;
+}
+.right-section .pricing div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.right-section .pricing div span:last-child {
+    color: #2dc275;
+}
+.right-section .promotion-infos {
+    margin-bottom: 16px;
+}
+.right-section .promotion-infos .promotion-info-item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.right-section .promotion-infos .promotion-info-item .reduction {
+    color: #2dc275;
+}
+.right-section .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right-section .footer i {
+    margin-right: 8px;
+}
+.right-section .footer button {
+    background-color: #2dc275;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+}
+.right-section .footer button :disabled {
+    background-color: gray;
+    color: white;
+}
+.right-section .footer button i {
+    margin-left: 8px;
+}
+@media (min-width: 1024px) {
+    .container {
+        flex-direction: row;
+    }
+    .right-section {
+        width: 33.33%;
+    }
+}

@@ -1,0 +1,85 @@
+.sign-up-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.sign-up {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.title h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-item {
+    margin-bottom: 1rem;
+}
+
+.input-item .label {
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.input-item .input {
+    width: 100%;
+}
+
+.input-item .input input {
+    padding: 0.5rem;
+}
+
+.input-item .input .MuiOutlinedInput-root {
+    border-radius: 4px;
+}
+
+.input-item .input .MuiOutlinedInput-notchedOutline {
+    border-color: #ccc;
+}
+
+.input-item .input .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: #888;
+}
+
+.input-item .input .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #333;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.button button {
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button button:hover {
+    background-color: #155ab6;
+}
+
+.button button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.5);
+}

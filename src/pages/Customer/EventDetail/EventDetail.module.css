@@ -1,0 +1,238 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+}
+.event-header {
+    background-color: #1f2937;
+    color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    gap: 16px; /* Add gap between elements */
+}
+.event-header .details {
+    padding: 16px;
+    flex: 1;
+}
+.event-header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.event-header p {
+    margin: 8px 0;
+}
+.event-header .price {
+    color: #10b981;
+    font-weight: bold;
+}
+.event-header button {
+    background-color: #4b5563;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: not-allowed;
+    margin-top: 16px;
+}
+.event-header img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+}
+@media (min-width: 768px) {
+    .event-header {
+        flex-direction: row;
+    }
+    .event-header .details {
+        flex: 2;
+    }
+    .event-header img {
+        flex: 1;
+        width: 100%;
+        height: auto;
+    }
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.about, .ticket-info, .organizer {
+    background-color: #1b1b1b;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(54, 49, 49, 0.1);
+}
+.about h2, .ticket-info h2, .organizer h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.about p, .ticket-info p, .organizer p {
+    margin: 8px 0;
+}
+
+.ticket-info .book-now-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #2d3748;
+
+    .text {
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+    .text i {
+        margin-right: 8px;
+    }
+    .book-now-button {
+        background-color: #38a169;
+        color: white;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+}
+.ticket-info .ticket {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.ticket-info .ticket:last-child {
+    margin-bottom: 0;
+}
+.ticket-info .ticket .price {
+    color: #ef4444;
+    font-weight: bold;
+}
+.ticket-info .ticket button {
+    background-color: #4b5563;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: not-allowed;
+}
+.organizer .info {
+    display: flex;
+    align-items: center;
+}
+.organizer img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.organizer .info .text {
+    margin-left: 16px;
+}
+.comment-item{
+    margin-bottom: 16px;
+}
+.comment-container {
+    background-color: #e5e5e5;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.comment-container h2 {
+    color: #1b1b1b;
+}
+.reply-box{
+    margin-left:30px;
+}
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.input-container img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.input-container input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+.comment {
+    background-color: #454545;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 8px;
+}
+.comment .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.comment .header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.comment .header .info {
+    flex-grow: 1;
+}
+.comment .header .info p {
+    margin: 0;
+}
+.comment .header .info .name {
+    font-weight: bold;
+}
+.comment .header .info .time {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+.comment .header .options {
+    color: #6b7280;
+}
+.comment .content {
+    margin-bottom: 8px;
+}
+.comment .actions {
+    display: flex;
+    align-items: center;
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+.comment .actions i {
+    margin-right: 4px;
+}
+.comment .actions button {
+    margin-left: 16px;
+    color: #3b82f6;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.reply-container {
+    margin-left: 48px;
+}
+@media (min-width: 768px) {
+    .event-header {
+        flex-direction: row;
+    }
+    .event-header .details {
+        flex: 2;
+    }
+    .event-header img {
+        flex: 1;
+        height: auto;
+    }
+}
