@@ -10,6 +10,7 @@ import RegisterOrganizer from './pages/RegisterOrganizer/RegisterOrganizer';
 import Error from './pages/Error/Error';
 import EventManagement from './pages/Organizer/EventManagement/EventManagement';
 import AdminMainPage from './pages/Admin/AdminMainPage';
+import Banking from './pages/Banking/Banking'
 function App() {
   return (
     <Router>
@@ -22,6 +23,7 @@ function App() {
         <Route path="/become-organizer" Component={RegisterOrganizer} />
         <Route path="/error" Component={Error} />
         <Route path='/admin/*' Component={AdminMainPage}/>
+        <Route path='/banking' Component={Banking} />
       </Routes>
     </Router>
   );

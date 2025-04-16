@@ -122,32 +122,14 @@ function PaymentInfo() {
                             <label htmlFor="vnpay">
                                 <img src={vnPayLogo} alt="VNPAY logo" width="24" height="24"/>
                                 VNPAY
-                                <span>New</span>
                             </label>
                         </div>
                         <div className={styles["method"]}>
-                            <input type="radio" id="zalopay" name="payment"/>
-                            <label htmlFor="zalopay">
+                            <input type="radio" id="tsbank" name="payment"/>
+                            <label htmlFor="tsbank">
                                 <img src={zaloPayLogo} alt="Zalopay logo" width="24" height="24"/>
-                                Zalopay
-                                <span>Coupon</span>
-                            </label>
-                            <a href="#">Details</a>
-                        </div>
-                        <div className={styles["method"]}>
-                            <input type="radio" id="shopeepay" name="payment"/>
-                            <label htmlFor="shopeepay">
-                                <img src={shopeePayLogo} alt="ShopeePay logo" width="24" height="24"/>
-                                ShopeePay Wallet
-                                <span>Coupon</span>
-                            </label>
-                            <a href="#">Details</a>
-                        </div>
-                        <div className={styles["method"]}>
-                            <input type="radio" id="vietqr" name="payment"/>
-                            <label htmlFor="vietqr">
-                                <img src={vietQRLogo} alt="VietQR logo" width="24" height="24"/>
-                                VietQR
+                                    TicSys Banking
+                                <span>New</span>
                             </label>
                         </div>
                     </div>
