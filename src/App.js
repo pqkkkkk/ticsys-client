@@ -11,6 +11,9 @@ import Error from './pages/Error/Error';
 import EventManagement from './pages/Organizer/EventManagement/EventManagement';
 import AdminMainPage from './pages/Admin/AdminMainPage';
 import Banking from './pages/Banking/Banking'
+import PaymentSuccessNotification from './pages/PaymentNotification/PaymentSuccessNotification';
+import PaymentFailedNotification from './pages/PaymentNotification/PaymentFailNotification';
+import BankIntegration from './pages/BankIntegration/BankIntegration';
 function App() {
   return (
     <Router>
@@ -23,7 +26,10 @@ function App() {
         <Route path="/become-organizer" Component={RegisterOrganizer} />
         <Route path="/error" Component={Error} />
         <Route path='/admin/*' Component={AdminMainPage}/>
-        <Route path='/banking' Component={Banking} />
+        <Route path='/banking/*' Component={Banking} />
+        <Route path='/payment-notification/success' Component={PaymentSuccessNotification} />
+        <Route path='/payment-notification/failed' Component={PaymentFailedNotification} />
+        <Route path='/bank-integration' Component={BankIntegration} />
       </Routes>
     </Router>
   );

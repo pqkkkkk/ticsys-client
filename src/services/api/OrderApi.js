@@ -123,9 +123,21 @@ export const GetOrderByIdWithDetailOrderAndTicketAndEventApi = async (orderId) =
 }
 export const ReserveOrderApi = async (orderId,voucherOfUserId) => {
     try {
-        let url = `/order/${orderId}`;
+        let url = `/order/${orderId}/reserve`;
         if(voucherOfUserId){
-            url = `/order/${orderId}?voucherOfUserId=${voucherOfUserId}`;
+            url = `/order/${orderId}/reverse?voucherOfUserId=${voucherOfUserId}`;
+        }
+        const response = await api.put(url);
+        return response.data;
+    } catch (error) {
+        throw error;
+    }
+}
+export const PayOrderApi = async (orderId, bankAccountId, voucherOfUserId) => {
+    try {
+        let url = `/order/${orderId}/payment?bankAccountId=${bankAccountId}`;
+        if(voucherOfUserId){
+            url = `/order/${orderId}/payment?bankAccountId=${bankAccountId}&voucherOfUserId=${voucherOfUserId}`;
         }
         const response = await api.put(url);
         return response.data;
