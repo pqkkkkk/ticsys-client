@@ -16,7 +16,7 @@ function OrganizerMainPage() {
       navigate('/error');
     }
   }, [navigate,user]);
-
+  
   return (
       <div className={styles["container"]}>
         <OrganizerNavigation />

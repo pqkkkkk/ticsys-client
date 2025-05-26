@@ -58,3 +58,19 @@ export const GetUsersApi = async () => {
         throw error;
     }
 }
+export const LinkToBankAccountApi = async (linkToBankAccountRequest, username) => {
+    try {
+        const response = await api.post(`/account/user/${username}/banking`, linkToBankAccountRequest);
+        return response.data;
+    } catch (error) {
+        throw error;
+    }
+}
+export const GetPaymentMethodsOfUserApi = async (username, bankName) => {
+    try {
+        const response = await api.get(`/account/user/${username}/banking?bankName=${bankName}`);
+        return response.data;
+    } catch (error) {
+        throw error;
+    }
+}

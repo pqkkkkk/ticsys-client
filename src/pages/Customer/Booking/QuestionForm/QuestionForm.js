@@ -3,7 +3,9 @@ import styles from "./QuestionForm.module.css";
 import { useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { GetEventByIdApi } from "../../../../services/api/EventApi";
-import { GetOrderByIdWithDetailOrderAndTicketAndPromotionApi } from "../../../../services/api/OrderApi";
+import { GetOrderByIdWithDetailOrderAndTicketAndPromotionApi,
+    ReserveOrderApi
+ } from "../../../../services/api/OrderApi";
 import { GetUser } from "../../../../services/UserStorageService";
 
 function QuestionForm() {
@@ -37,6 +39,17 @@ function QuestionForm() {
     useEffect(() => {
         setTotalTickets(ticketOfOrders.reduce((total, ticketOfOrder) => total + ticketOfOrder.quantity, 0));
     }, [ticketOfOrders]);
+
+    const HandleReserveOrder = async () => {
+        const response = await ReserveOrderApi(orderId, null);
+
+        if(response && response === "success") {
+            HandleContinue();
+        }
+        else {
+            alert("Reserve order failed. Please try again later.");
+        }
+    }
     const HandleContinue = () => {
         navigate(`/booking/${eventId}/payment-info/${orderId}`);
     };
@@ -140,7 +153,7 @@ function QuestionForm() {
                     <span className={styles["amount"]}>{order?.price?.toLocaleString('vi-VN')} đ</span>
                 </div>
                 <p className={styles["required-message"]}>Please answer all questions to continue</p>
-                <button onClick={HandleContinue} className={styles["continue-btn"]}>Continue <i class="fas fa-arrow-right"></i></button>
+                <button onClick={HandleReserveOrder} className={styles["continue-btn"]}>Continue <i class="fas fa-arrow-right"></i></button>
                 <div className={styles["reselect"]}>
                     <a href="#">Reselect Ticket</a>
                 </div>
