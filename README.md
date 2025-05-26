@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+# TicSys Client
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TicSys Client is a web application for event ticketing, booking, and management. It provides features for customers, organizers, and administrators, including event browsing, ticket purchasing, order management, bank integration, and reporting. The project is built with React, Tailwind CSS, and integrates with a backend API.
+This project is part of the TicSys ecosystem, which includes a backend service for handling events, orders, and user management.
+View the [TicSys Backend](https://github.com/pqkkkkk/TicSys-server)
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Customer Portal**
+  - Browse and search for events
+  - Book tickets and apply vouchers or promotions
+  - Manage orders and view order details
+  - User profile management
 
-### `npm start`
+- **Organizer Portal**
+  - Manage events and ticket types
+  - Create and manage vouchers and promotions
+  - View event statistics and order lists
 
-Runs the app in the development mode.\
+- **Admin Portal**
+  - Manage orders and view reports
+  - Revenue and ticket sales analytics
+
+- **Banking Integration**
+  - Link and manage bank accounts
+  - Transfer and view transaction history
+
+## Project Structure
+
+```
+├── public/
+│   ├── favicon.ico
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   │   ├── Admin/
+│   │   ├── Banking/
+│   │   ├── BankIntegration/
+│   │   ├── Customer/
+│   │   ├── Organizer/
+│   │   ├── PaymentNotification/
+│   │   └── ...
+│   ├── services/
+│   │   └── api/
+│   ├── utils/
+│   ├── App.js
+│   ├── index.js
+│   └── ...
+├── package.json
+├── tailwind.config.js
+├── Dockerfile
+└── README.md
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (>=14)
+- npm
+
+### Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/pqkkkkk/ticsys-client.git
+   cd ticsys-client
+   ```
+
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+
+3. Configure environment variables and API endpoints as needed (see `src/services/api/`).
+
+### Running the App
+
+Start the development server:
+
+```sh
+npm start
+```
+
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Building for Production
 
-### `npm test`
+```sh
+npm run build
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The production build will be in the `build/` folder.
 
-### `npm run build`
+### Running Tests
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+npm test
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- React
+- Tailwind CSS
+- Axios
+- Docker (for containerization)
+- Font Awesome (icons)
 
-### `npm run eject`
+## Folder Overview
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- `src/pages/Customer/`: Customer-facing pages (booking, orders, profile, etc.)
+- `src/pages/Organizer/`: Organizer tools (event management, vouchers, statistics)
+- `src/pages/Admin/`: Admin dashboards and reports
+- `src/pages/Banking/` & `src/pages/BankIntegration/`: Bank account linking and transactions
+- `src/services/api/`: API service modules (e.g., [`AccountApi`](src/services/api/AccountApi.js), [`CommentApi`](src/services/api/CommentApi.js))
+- `src/components/`: Shared UI components
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Customization
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Update API endpoints in [`src/services/api/`](src/services/api/) as needed.
+- Tailwind CSS configuration is in [`tailwind.config.js`](tailwind.config.js).
+- Static assets and icons are in [`public/`](public/).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For more details, see the source code and inline documentation.
