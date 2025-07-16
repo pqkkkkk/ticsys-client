@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import SignIn from './pages/SignIn/SignIn';
@@ -14,24 +13,28 @@ import Banking from './pages/Banking/Banking'
 import PaymentSuccessNotification from './pages/PaymentNotification/PaymentSuccessNotification';
 import PaymentFailedNotification from './pages/PaymentNotification/PaymentFailNotification';
 import BankIntegration from './pages/BankIntegration/BankIntegration';
+import { ThemeProvider } from './contexts/ThemeContext';
+
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/*" Component={CustomerMainPage} />
-        <Route path="/organizer/*" Component={OrganizerMainPage} />
-        <Route path='/organizer/myevents/:eventId/*' element={<EventManagement />}/>
-        <Route path="/signin" Component={SignIn} />
-        <Route path="/signup" Component={SignUp} />
-        <Route path="/become-organizer" Component={RegisterOrganizer} />
-        <Route path="/error" Component={Error} />
-        <Route path='/admin/*' Component={AdminMainPage}/>
-        <Route path='/banking/*' Component={Banking} />
-        <Route path='/payment-notification/success' Component={PaymentSuccessNotification} />
-        <Route path='/payment-notification/failed' Component={PaymentFailedNotification} />
-        <Route path='/bank-integration' Component={BankIntegration} />
-      </Routes>
-    </Router>
+    <ThemeProvider>
+      <Router>
+        <Routes>
+          <Route path="/*" Component={CustomerMainPage} />
+          <Route path="/organizer/*" Component={OrganizerMainPage} />
+          <Route path='/organizer/myevents/:eventId/*' element={<EventManagement />}/>
+          <Route path="/signin" Component={SignIn} />
+          <Route path="/signup" Component={SignUp} />
+          <Route path="/become-organizer" Component={RegisterOrganizer} />
+          <Route path="/error" Component={Error} />
+          <Route path='/admin/*' Component={AdminMainPage}/>
+          <Route path='/banking/*' Component={Banking} />
+          <Route path='/payment-notification/success' Component={PaymentSuccessNotification} />
+          <Route path='/payment-notification/failed' Component={PaymentFailedNotification} />
+          <Route path='/bank-integration' Component={BankIntegration} />
+        </Routes>
+      </Router>
+    </ThemeProvider>
   );
 }
 

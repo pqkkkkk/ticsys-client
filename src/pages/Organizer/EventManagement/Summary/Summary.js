@@ -26,9 +26,9 @@ function Summary(){
                 GetTicketCountByDateApi(eventIdState, "2025-02-18", "2025-03-07"),
             ]);
             setRevenues(revenues.revenues);
-            setTicketCounts(ticketCounts.ticketCounts);
-            setTotalRevenue(revenues.totalRevenue);
-            setTotalTicketCount(ticketCounts.totalTicketCount);
+            setTicketCounts(ticketCounts?.ticketCounts);
+            setTotalRevenue(revenues?.totalRevenue);
+            setTotalTicketCount(ticketCounts?.totalTicketCount);
         };
         fetchRevenues();
     }, [eventIdState]);
@@ -128,7 +128,7 @@ function Summary(){
                         </div>
                         <div className={styles["info"]}>
                             <h3>Số vé đã bán</h3>
-                            <p>{totalTicketCount.toLocaleString('vi-VN')} vé</p>
+                            <p>{totalTicketCount?.toLocaleString('vi-VN')} vé</p>
                             <p className={styles["total"]}>Tổng: 10 vé</p>
                         </div>
                     </div>
