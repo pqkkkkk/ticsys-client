@@ -65,7 +65,7 @@ function CustomerHeader() {
           {/* Action Buttons - Hidden on mobile */}
           <div className="hidden md:flex items-center space-x-4">
             {/* Become Organizer / Organizer Dashboard */}
-            {user && user.roles.find(role => role === "ORGANIZER") === undefined && (
+            {user && user.roles?.find(role => role === "ORGANIZER") === undefined && (
               <button 
                 onClick={() => navigate("/become-organizer")}
                 className="px-4 py-2 bg-secondary-600 hover:bg-secondary-700 text-white rounded-lg transition-colors duration-200 font-medium"
@@ -74,7 +74,7 @@ function CustomerHeader() {
               </button>
             )}
             
-            {user && user.roles.find(role => role === "ORGANIZER") !== undefined && (
+            {user && user.roles?.find(role => role === "ORGANIZER") !== undefined && (
               <button 
                 onClick={() => navigate("/organizer")}
                 className="px-4 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg transition-colors duration-200 font-medium"

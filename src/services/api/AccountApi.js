@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:8080/api";
+const BASE_URL = "http://localhost:8081/api";
 const api = axios.create({
     baseURL: BASE_URL,
     timeout: 20000,
@@ -19,9 +19,19 @@ api.interceptors.request.use(
         return Promise.reject(error);
     }
 );
+
 export const SignInApi = async (signInRequest) => {
     try{
         const response = await api.post("/account/auth/signin", signInRequest);
+        return response.data;
+    }
+    catch(err){
+        console.log(err);
+    }
+}
+export const SignInWithGoogleApi = async (signInWithGoogleRequest) => {
+    try{
+        const response = await api.post("/v1/auth/signin/with-google", signInWithGoogleRequest);
         return response.data;
     }
     catch(err){
@@ -41,6 +51,24 @@ export const SignUpApi = async (signUpRequest) => {
         console.log(err);
     }
 }
+export const SignUpWithGoogleApi = async (signUpWithGoogleRequest) => {
+    try{
+        const response = await api.post("/v1/auth/signup/with-google", signUpWithGoogleRequest);
+        return response.data;
+    }
+    catch(err){
+        console.log(err);
+    }
+}
+export const handleOTPRequestToActivateUser = async (otpRequest) => {
+    try {
+        const response = await api.post("/v1/auth/signup/with-google", otpRequest);
+        return response.data;
+    } catch (error) {
+        console.error("Error activating user:", error);
+        throw error;
+    }
+};
 export const RegisterOrganizerApi = async (registerOrganizerRequest) => {
     try{
         const response = await api.post("/account/user/organizer", registerOrganizerRequest);

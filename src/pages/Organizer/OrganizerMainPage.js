@@ -10,7 +10,7 @@ function OrganizerMainPage() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    if(user === null || user.roles.find(role => role === "ORGANIZER") === undefined){
+    if(user === null){
       navigate('/error');
     } else {
       setIsLoading(false);
